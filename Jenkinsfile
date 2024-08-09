@@ -8,7 +8,8 @@ pipeline {
             steps {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '965bf949-a5dc-4f47-9858-8b402a09dfb7', url: 'https://github.com/nandu319/maven.git']])
             }
-        }
+        } 
+        
 
         stage('build') {
             steps {
